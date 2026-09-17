@@ -1,10 +1,12 @@
 # Practice problems with stacks and queues
 
-Exercise 3 (reverse a stack) is implemented, in `src/linked_structures/reverse_stack.py`,
-tested in `tests/test_reverse_stack.py`. Exercises 4 and 5 are strategies only,
-per the assignment (only one implementation is required).
+The assignment only requires implementing one of exercises 3 through 5, and a
+strategy for the rest. All three are implemented here anyway, each with tests;
+the write-ups below double as the reasoning behind each one.
 
-## Exercise 3: reverse a stack (implemented)
+## Exercise 3: reverse a stack
+
+`src/linked_structures/reverse_stack.py`, tested in `tests/test_reverse_stack.py`.
 
 Draining a stack into a queue and back reverses it, using one auxiliary
 structure and two passes:
@@ -21,25 +23,25 @@ O(n) time (two linear passes), O(n) auxiliary space for the queue.
 
 ## Exercise 4: valid parentheses
 
-Strategy: scan the string once, using a stack of the open brackets seen so
-far.
+`src/linked_structures/valid_parentheses.py`, tested in `tests/test_valid_parentheses.py`.
+
+Scan the string once, using a stack of the open brackets seen so far.
 
 - On an opening bracket (`(`, `[`, `{`), push it.
-- On a closing bracket, if the stack is empty, the string is invalid (a close
-  with nothing open). Otherwise pop the stack and check the popped bracket is
-  the matching open type for this close (a lookup table from close to its
-  matching open makes this a single comparison, e.g. `)` maps to `(`). If it
-  doesn't match, the string is invalid.
-- Any other character is ignored, or is itself invalid, depending on the
-  exact problem statement.
-- After the scan, the string is valid only if every open bracket found a
-  match and the stack is empty at the end (no unmatched opens left over).
+- On a closing bracket, the top of the stack must be its matching open type
+  (a lookup table from close to its matching open makes this one comparison).
+  If the stack is empty (nothing open) or the top doesn't match, the string
+  is invalid.
+- Any other character is ignored.
+- At the end, the string is valid only if every open bracket found a match:
+  the stack must be empty.
 
-One pass, O(n) time, O(n) worst-case space for the stack (all opens, no
-closes).
+One pass, O(n) time, O(n) worst-case space for the stack (a string of nothing
+but opens).
 
 ## Exercise 5: copy stack (one queue as auxiliary storage)
 
+`src/linked_structures/copy_stack.py`, tested in `tests/test_copy_stack.py`.
 Source: University of Washington CSE122. Goal: given a stack, return a new
 stack holding the same values in the same order, using one queue as the only
 extra storage, leaving the original stack the way it started.

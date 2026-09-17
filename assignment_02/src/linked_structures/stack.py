@@ -14,6 +14,7 @@ class Stack(Generic[T]):
     every operation is O(1) and none of them touch the back."""
 
     def __init__(self) -> None:
+        """Create an empty stack."""
         self._items: DoublyLinkedList[T] = DoublyLinkedList()
 
     def push(self, data: T) -> None:
@@ -33,4 +34,5 @@ class Stack(Generic[T]):
         return self._items.is_empty()
 
     def __len__(self) -> int:
+        """Number of elements currently on the stack."""
         return len(self._items)

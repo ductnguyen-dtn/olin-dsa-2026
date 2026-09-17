@@ -18,6 +18,7 @@ class Queue(Generic[T]):
     operation is O(1)."""
 
     def __init__(self) -> None:
+        """Create an empty queue."""
         self._items: DoublyLinkedList[T] = DoublyLinkedList()
 
     def enqueue(self, data: T) -> None:
@@ -37,4 +38,5 @@ class Queue(Generic[T]):
         return self._items.is_empty()
 
     def __len__(self) -> int:
+        """Number of elements currently in the queue."""
         return len(self._items)
