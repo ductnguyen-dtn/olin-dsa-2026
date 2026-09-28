@@ -9,6 +9,7 @@ Language: Python with type hints (`mypy --strict`).
 |---|---|---|
 | [`assignment_01/`](assignment_01/) | Assignment 1: Hello World + Getting to Know You | Spot Micro servo-code port, meeting-conflict scheduler |
 | [`assignment_02/`](assignment_02/) | Assignment 2: Linked Data Structures | Doubly linked list, Stack and Queue built on it, stack-reversal practice problem |
+| [`assignment_03/`](assignment_03/) | Assignment 3: Graph Searching and Shortest Paths | Weighted digraph, min priority queue on a hand-written heap, Dijkstra, Euler 81/83 and maze solver |
 
 Each folder is self-contained: its own `pyproject.toml`, `Makefile`, and
 `.venv`. From inside an assignment folder:
