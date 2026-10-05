@@ -46,3 +46,9 @@ heap sort are not guaranteed to be.
 Every comparison in every algorithm is written using only `__lt__` (see
 `src/sorting/_comparable.py`), so any type that defines just that one method
 is sortable here, the same way `sorted()` and `list.sort()` work in Python.
+
+## AI assistance
+
+The code, its docstrings and inline comments, and the writeups in `docs/`
+were produced with the help of Claude (Anthropic), under my direction and
+review.

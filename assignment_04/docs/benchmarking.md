@@ -99,3 +99,7 @@ implementation is in place; merge sort when a stability or a guaranteed (not
 just average) Θ(n log n) worst case matters and Θ(n) extra memory is
 affordable; heap sort when a guaranteed Θ(n log n) worst case is needed but
 memory is constrained to Θ(1) extra.
+
+---
+
+*AI assistance: this writeup was produced with the help of Claude (Anthropic), under my direction and review.*

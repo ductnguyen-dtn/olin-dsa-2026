@@ -82,3 +82,7 @@ A few worth a sentence of extra explanation:
   superscript is lost in the text extraction); the official answer is stated
   as Θ(2ⁿ), which only makes sense, and only gets marked case 3, if the term
   is exponential, so that's the reading used here.
+
+---
+
+*AI assistance: this writeup was produced with the help of Claude (Anthropic), under my direction and review.*

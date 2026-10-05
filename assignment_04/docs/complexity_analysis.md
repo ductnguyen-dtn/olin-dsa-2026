@@ -57,3 +57,7 @@ which is less cache-friendly than merge sort's or quick sort's mostly
 sequential access. Quick sort does the least bookkeeping per comparison in
 this implementation. The benchmark in `docs/benchmarking.md` shows this:
 same Θ(n log n) class, different actual runtimes.
+
+---
+
+*AI assistance: this writeup was produced with the help of Claude (Anthropic), under my direction and review.*

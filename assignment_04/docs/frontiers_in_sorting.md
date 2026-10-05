@@ -78,3 +78,7 @@ This is also a concrete, shipped counterexample to the idea that sorting is a
 constant factor, and the actual machine instructions realizing an algorithm,
 were still worth searching over, by a method quite different from the
 analysis-by-hand this assignment's four algorithms were designed with.
+
+---
+
+*AI assistance: this writeup was produced with the help of Claude (Anthropic), under my direction and review.*
