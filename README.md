@@ -12,6 +12,7 @@ Language: Python with type hints (`mypy --strict`).
 | [`assignment_03/`](assignment_03/) | Assignment 3: Graph Searching and Shortest Paths | Weighted digraph, min priority queue on a hand-written heap, Dijkstra, Euler 81/83 and maze solver |
 | [`assignment_04/`](assignment_04/) | Assignment 4: Sorting Algorithms | Insertion/merge/quick/heap sort, real benchmark data + plot, AlphaDev writeup, master theorem worksheet |
 | [`assignment_05/`](assignment_05/) | Assignment 5: Divide and Conquer and Dynamic Programming | Strassen's algorithm (with hybrid threshold analysis), Smith-Waterman sequence alignment on real genome data |
+| [`assignment_06/`](assignment_06/) | Assignment 6: Deep Dive | Policy iteration vs. value iteration on a stochastic gridworld MDP, hand-verified correctness, real benchmark data, and a writeup connecting both back to PPO (used on the SpotMicro/G1 Isaac Lab projects) |
 
 Each folder is self-contained: its own `pyproject.toml`, `Makefile`, and
 `.venv`. From inside an assignment folder:
